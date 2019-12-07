@@ -3,7 +3,7 @@
 <html>
 		<head>
 			<link rel='shortcut icon' href='favicon png.ico' type='image/x-icon'/ >
-		<title>CLiCS</title>
+		<title>CLICS</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
@@ -12,7 +12,7 @@
 	<!-- Header -->
 	<div class ="topnav">
 		<header id="header">
-			<h1><a style="text-decoration:none" href="/main/"> <font color = "white" > CLiCS </font></a>  </h1>
+			<h1><a style="text-decoration:none" href="/main/"> <font color = "white" > CLICS </font></a>  </h1>
 	<header>
 	</div>
 
@@ -48,8 +48,14 @@ RM:
 		</ul>
 </div>
 
-<?php
-echo "Hello, ".$Fname." ".$Lname.".<br />";
-?>
+
+
+<body>
+	Welcome <?php echo $_POST["name"]; ?><br>
+	Your email address is: <?php echo $_POST["nric"]; ?>
+
+</form>
+
+</body>
 
 </html>
