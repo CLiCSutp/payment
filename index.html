@@ -49,15 +49,23 @@ RM:
 </div>
 
 <script>
-function myFunction() {
-  var x = document.getElementById("user");
-  var text = "";
-  var i;
-  for (i = 0; i < x.length ;i++) {
-    text += x.elements[i].value + "<br>";
-  }
-  document.getElementById("demo").innerHTML = text;
-}
-</script>
+					 function getParams(){
+							 var idx = document.URL.indexOf('?');
+							 var params = new Array();
+							 if (idx != -1) {
+									 var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+									 for (var i=0; i<pairs.length; i++){
+											 nameVal = pairs[i].split('=');
+											 params[nameVal[0]] = nameVal[1];
+									 }
+							 }
+							 return params;
+					 }
+					 params = getParams();
+					 firstname = unescape(params["name"]);
+					 lastname = unescape(params["nric"]);
+					 document.write("firstname = " + name + "<br>");
+					 document.write("lastname = " + nric + "<br>");
+			 </script>
 
 </html>
