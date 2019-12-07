@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1" >
 		<head>
 			<link rel='shortcut icon' href='favicon png.ico' type='image/x-icon'/ >
 		<title>CLICS</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
-		<?php include 'clics.php' ?>
 
 </head>
 
@@ -24,59 +22,30 @@
 					</div>
 				</p>
 
+			<div class="logo">
+			<img src="h.jpeg">
+			</div>
+
 	</header>
 
 </body>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Login</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-	</head>
-
-	<body>
-	<div class = "login ">
-
-	<h2> Clamp Index Number: <br/>
-	<form id="user" method="post"  action="clics.php">
-		<input list="clamps" placeholder="Insert Clamp Number" name="clamp" required >
-	  <datalist  id="clamps">
-	    <option value="Clamp 001">
-	    <option value="Clamp 002">
-	    <option value="Clamp 003">
-	    <option value="Clamp 004">
-	    <option value="Clamp 005">
-	  </datalist>
-	</h2>
-</form>
-
 
 <form>
-	<label for="username">
-					<i class="fas fa-user"></i>
-				</label>
+PLEASE MAKE THE PAYMENT HERE<br><br>
+RM:
+<select name ="">
+<option value ="50"> 50</option>
+</select>
 
-		<?php
-				$name = $_POST["name"];
-				$nric = $_POST["nric"];
-				?>
 
-	<form id="user" action="/user-info/" method="post" >
-		<input type="text" name="name" class="form-control"
- 														placeholder = "Name" required><br><br>
+</form>
 
-				<label for="NRIC">
-										<i class="fas fa-lock"></i>
-						</label>
+<div class="row">
 
-		<input id="numbersOnly" pattern="[0-9.]+" title = "Numbers Only"
-				type ="NRIC" name ="nric" placeholder="NRIC" class="form-control"required><br><br>
-
-<input type ="submit"  value="Submit"><br><br>
+		<ul class="main-nav">
+			<li><a href="http://192.168.43.4/" target="_self"> PROCEED TO PAY </a></li>
+		</ul>
 </div>
 
-</form>
-
-</form>
-</body>
 </html>
