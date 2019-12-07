@@ -48,17 +48,27 @@ RM:
 		</ul>
 </div>-->
 
-window.onload = function () {
-    var url = document.location.href,
-        params = url.split('?')[1].split('&'),
-        data = {}, tmp;
-    for (var i = 0, l = params.length; i < l; i++) {
-         tmp = params[i].split('=');
-         data[tmp[0]] = tmp[1];
-    }
-    document.getElementById('here').innerHTML = data.name;
+<script type="text/javascript">
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+if (window != top)
+ top.location.href=location.href
+document.write("<h1>Your form has been submitted!</h1><h2>You entered the following data:</h2>");
+
+var formData = location.search;
+formData = formData.substring(1, formData.length);
+
+while (formData.indexOf("+") != -1) {
+ formData = formData.replace("+", " ");
 }
 
+formData = unescape(formData);
+var formArray = formData.split("&");
 
+for (var i=0; i < formArray.length; ++i) {
+ document.writeln(formArray[i] + "<br />");
+}
+
+// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+</script>
 
 </html>
