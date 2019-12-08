@@ -39,18 +39,13 @@
                     <address>
                         <strong>
 													<p id="welcome"> </p>
-												<script>
-												    window.onload = function() {
-												        document.getElementById('welcome').innerText = sessionStorage.getItem('username');
-												    };
-												</script>
+													<script>
+													    window.onload = function() {
+													        document.getElementById('welcome').innerText = sessionStorage.getItem('username')
+																	+ "<br>  " + sessionStorage.getItem('userid') + "<br> " + sessionStorage.getItem('userclamps');
+													    };
+													</script>
 											</strong>
-											<br>
-										<script>
-												window.onload = function() {
-														document.getElementById('welcome').innerText = sessionStorage.getItem('userid');
-												};
-										</script>
                         <br>
                         Los Angeles, CA 90026
                         <br>
