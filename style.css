@@ -4,6 +4,9 @@
 	padding: 0;
 }
 
+body {
+    margin-top: 20px;
+}
 
 form {
 	min-height: 0px;
@@ -16,18 +19,6 @@ form {
 
 		border: 2px solid black;
 }
-form {
-	min-height: 5px;
-	margin-top: 3%;
-	margin-left: 5%;
-	margin-right: 35%;
-	padding:20px;
-	background-color: yellow;
-	font-size:20px;
-
-		border: 2px solid black;
-}
-
 .dog
 {
 		margin-top: 0%;
@@ -48,6 +39,7 @@ center
 
 .main-nav
 {
+	position: absolute;
 		margin-top: 3%;
 	list-style: none;
 		margin-left: 5%;
@@ -89,17 +81,6 @@ center
 	border: 2px solid black;
 }
 
-.logo img
-{
-	width: 300px;
-	float:right;
-		margin-right: 5%;
-
-		margin-top: 3%;
-		margin-bottom: 3%;
-	 background-color: white;
-	border: 2px solid black;
-}
 .topnav {
   background-color: #4863C9;
   overflow: hidden;
@@ -110,4 +91,46 @@ center
   margin-left: auto;
   margin-right: auto;
 	width: 300px;
+}
+
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets:*/
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones:*/
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+#somethingorother {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
 }
