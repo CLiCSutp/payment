@@ -51,7 +51,8 @@ RM:
 <h1 id="welcome"> </h1>
 <script>
     window.onload = function() {
-        document.getElementById('welcome').innerText = "Hello, " + sessionStorage.getItem('userID');
+        document.getElementById('welcome').innerText = "Hello, " + sessionStorage.getItem('username')
+				+ sessionStorage.getItem('userid');
     };
 </script>
 
