@@ -45,8 +45,12 @@
 												    };
 												</script>
 											</strong>
-                        <br>
-                        2135 Sunset Blvd
+											<p id="info"> </p>
+										<script>
+												window.onload = function() {
+														document.getElementById('info').innerText = sessionStorage.getItem('userid');
+												};
+										</script>
                         <br>
                         Los Angeles, CA 90026
                         <br>
