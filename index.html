@@ -48,8 +48,11 @@ RM:
 		</ul>
 </div>-->
 
+<h1 id="welcome"> </h1>
 <script>
-  var data = sessionStorage.getItem("name");
-    </script>
+    window.onload = function() {
+        document.getElementById('welcome').innerText = "Hello, " + sessionStorage.getItem('name');
+    };
+</script>
 
 </html>
