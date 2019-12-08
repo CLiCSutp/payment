@@ -1,132 +1,90 @@
+
 <!DOCTYPE html>
 
 <html>
-		<head>
-			<link rel='shortcut icon' href='favicon png.ico' type='image/x-icon'/ >
-		<title>CLICS</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<head>
+		<link rel='shortcut icon' href='favicon png.ico' type='image/x-icon'/ >
+	<title>CLICS</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
 
 </head>
 
 <body>
-	<!-- Header -->
-	<div class ="topnav">
-		<header id="header">
-			<h1><a style="text-decoration:none" href="/main/"> <font color = "white" > CLICS </font></a>  </h1>
-	<header>
-	</div>
+<!-- Header -->
+<div class ="topnav">
+	<header id="header">
+		<h1><a style="text-decoration:none" href="/main/"> <font color = "white" > CLICS </font></a>  </h1>
+<header>
+</div>
 
-		<div class="center">
-			<p style="text-align:center;">
-					<img src="capture.png">
-					</div>
-				</p>
+	<div class="center">
+		<p style="text-align:center;">
+				<img src="capture.png">
+				</div>
+			</p>
 
-	</header>
+</header>
 
 </body>
 
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
 
-<div class="container">
-    <div class="row">
-        <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                    <address>
-                        <strong>
-													<p id="welcome"> </p>
-													<script>
-													    window.onload = function() {
-													        document.getElementById('welcome').innerText = sessionStorage.getItem('userclamps')
-																	+"\n" + sessionStorage.getItem('username')
-																	+ "\n  " + sessionStorage.getItem('userid') + "\n " ;
-													    };
-													</script>
-											</strong>
-                    </address>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
-                    <p>
-                        <em>Date: 1st November, 2013</em>
-                    </p>
-                    <p>
-                        <em>Receipt #: 34522677W</em>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="text-center">
-                    <h1>Receipt</h1>
-                </div>
-                </span>
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Detail(s)</th>
-                            <th>#</th>
-                            <th class="text-center">Price</th>
-                            <th class="text-center">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="col-md-9"><em>Summons Amount</em></h4></td>
-                            <td class="col-md-1" style="text-align: center"> 1 </td>
-                            <td class="col-md-1 text-center">RM50</td>
-                            <td class="col-md-1 text-center">RM50</td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-9"><em>E-Service Charge</em></h4></td>
-                            <td class="col-md-1" style="text-align: center"> 1 </td>
-                            <td class="col-md-1 text-center">RM2</td>
-                            <td class="col-md-1 text-center">RM2</td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-9"><em>Goods and Services Tax @6%</em></h4></td>
-                            <td class="col-md-1" style="text-align: center"> 1 </td>
-                            <td class="col-md-1 text-center">RM0.12</td>
-                            <td class="col-md-1 text-center">RM0.12</td>
-                        </tr>
-                      <!--  <tr>
-                            <td>   </td>
-                            <td>   </td>
-                            <td class="text-right">
-                            <p>
-                                <strong>Subtotal: </strong>
-                            </p>
-                            <p>
-                                <strong>Tax: </strong>
-                            </p></td
-                            <td class="text-center">
-                            <p>
-                                <strong>$6.94</strong>
-                            </p>
-                            <p>
-                                <strong>$6.94</strong>
-                            </p></td>
-                        </tr>-->
-                        <tr>
-                            <td>   </td>
-                            <td>   </td>
-                            <td class="text-right"><h4><strong>Total: </strong></h4></td>
-                            <td class="text-center text-danger"><h4><strong>RM52.12</strong></h4></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button type="button" class="btn btn-success btn-lg btn-block">
-                    Pay Now   <span class="glyphicon glyphicon-chevron-right"></span>
-                </button></td>
-            </div>
-        </div>
-    </div>
+<body>
+<div class = "login ">
 
-		<div id="message">
-			Should you have any problem with our services,
-			<br>please call 0x-xxxxxxxx or  email xx@xx.com.my.
-			</div>
+<h2> Clamp Index Number: <br/>
+<form id="user" method="get" onsubmit="callme()">
+	<!--<input list="clamps" placeholder="Insert Clamp Number" name="clamp" required >-->
+	<select  id="clamps">
+		<option selected disabled>Choose one</option>
+		<option value="Clamp 001">Clamp 001</option>
+		<option value="Clamp 002">Clamp 002</option>
+		<option value="Clamp 003">Clamp 003</option>
+	</select>
+</h2>
+</form>
+
+
+<form id="user" method="get" onsubmit="callme()">
+<label for="username">
+				<i class="fas fa-user"></i>
+			</label>
+
+<form >
+	<input id="name" type="text" name="name" class="form-control"
+													placeholder = "Name" required><br><br>
+
+			<label for="NRIC">
+									<i class="fas fa-lock"></i>
+					</label>
+
+	<input id="id" pattern="[0-9.]+" title = "Numbers Only"
+			type ="NRIC" name ="nric" placeholder="NRIC" class="form-control"required><br><br>
+
+
+<input type ="submit"  value="Submit" formaction="/user-info/"><br><br>
+</div>
+
+</form>
+
+</form>
+
+<script>
+		function callme(){
+				var name = document.getElementById('name').value;
+				var id = document.getElementById('id').value;
+				var clamps = document.getElementById('clamps').value;
+				sessionStorage.setItem('username', name);
+				sessionStorage.setItem('userid', id);
+				sessionStorage.setItem('userclamps', clamps);
+		}
+</script>
+
+</body>
 
 </html>
