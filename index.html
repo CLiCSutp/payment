@@ -132,7 +132,7 @@
     </div>
 
 		<body>
-			<p style="text-align:center;">
+
 		  <script
 		    <script src="https://www.paypal.com/sdk/js?client-id=AebDxTEC8H_Qk3zyRjcoj2qzBPmSsvqwW0Uw-NJmM3jbRclDC_UlTRaJb4JU0bQGH_w4pFq5xjL4maBm&currency=MYR"></script>
 
@@ -140,7 +140,10 @@
 
 			<div id="paypal-button-container"></div>
 
+			<div id="message" class="center">
+				<p style="text-align:center;">
  <script>
+
    paypal.Buttons({
      createOrder: function(data, actions) {
        // This function sets up the details of the transaction, including the amount and line item details.
@@ -164,6 +167,7 @@
    //This function displays Smart Payment Buttons on your web page.
  </script>
 </p>
+	</div>
 		</body>
 
 
