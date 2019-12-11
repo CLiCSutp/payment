@@ -140,18 +140,13 @@
 			<div id="paypal-button-container"></div>
 
  <script>
-	 paypal.Buttons().render('#paypal-button-container');
-	 // This function displays Smart Payment Buttons on your web page.
- </script>
-
- <script>
    paypal.Buttons({
      createOrder: function(data, actions) {
        // This function sets up the details of the transaction, including the amount and line item details.
        return actions.order.create({
          purchase_units: [{
            amount: {
-             value: '0.01'
+             value: '52.12'
            }
          }]
        });
@@ -171,8 +166,10 @@
 
 
 		<div id="message" class="center">
+			<p style="text-align:center;">
 			Should you have any problem with our services,
 			<br>please call 0x-xxxxxxxx or  email xx@xx.com.my.
+		</p>
 			</div>
 
 </html>
