@@ -143,7 +143,7 @@
 	 paypal.Buttons().render('#paypal-button-container');
 	 // This function displays Smart Payment Buttons on your web page.
  </script>
- 
+
  <script>
    paypal.Buttons({
      createOrder: function(data, actions) {
@@ -151,7 +151,7 @@
        return actions.order.create({
          purchase_units: [{
            amount: {
-             value: '0.01'
+             value: '52.12'
            }
          }]
        });
