@@ -3,31 +3,12 @@
 	margin: 0;
 	padding: 0;
 }
-
+/*
 body {
-    margin-top: 20px;
-}
+  	background-color: #DADFF0;
+}*/
 
-form {
-	min-height: 0px;
-	margin-top: 3%;
-	margin-left: 5%;
-	margin-right: 35%;
-	padding:20px;
-	background-color: yellow;
-	font-size:20px;
 
-		border: 2px solid black;
-}
-.dog
-{
-		margin-top: 0%;
-		min-height: 80px;
-		background-color: orange;
-		margin-left: 5%;
-		margin-right: 5%;
-
-}
 center
 {
 
@@ -39,7 +20,6 @@ center
 
 .main-nav
 {
-	position: absolute;
 		margin-top: 3%;
 	list-style: none;
 		margin-left: 5%;
@@ -56,8 +36,6 @@ center
 .main-nav li a
 {
 	color: black;
-
-
 	padding: 5px 30px;
 	font-family: "Roboto", times-new-roman;
 	font-size: 20px;
@@ -80,7 +58,6 @@ center
 	 background-color: white;
 	border: 2px solid black;
 }
-
 .topnav {
   background-color: #4863C9;
   overflow: hidden;
@@ -92,8 +69,6 @@ center
   margin-right: auto;
 	width: 300px;
 }
-
-
 
 @media only screen and (max-width:800px) {
   /* For tablets:*/

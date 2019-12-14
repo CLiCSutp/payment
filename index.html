@@ -1,182 +1,55 @@
+
 <!DOCTYPE html>
 
-<html>
-		<head>
-			<link rel='shortcut icon' href='favicon png.ico' type='image/x-icon'/ >
-		<title>CLICS</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
-
+<html lang="en">
+	<head>
+		<link rel='shortcut icon' href='favicon png.ico' type='image/x-icon'/ >
+	<title>CLICS</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta charset="utf-8" />
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700' rel='stylesheet' type='text/css'>
+	<style>
+		@import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+		@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+	</style>
+	<link rel="stylesheet" href="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/default_thank_you.css">
+	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/jquery-1.9.1.min.js"></script>
+	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/html5shiv.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	<!-- Header -->
-	<div class ="topnav">
-		<header id="header">
-			<h1><a style="text-decoration:none" href="/main/"> <font color = "white" > CLICS </font></a>  </h1>
-	<header>
-	</div>
+<!-- Header -->
+<div class ="topnav">
+	<header id="header">
+		<h1><a style="text-decoration:none" href="/main/"> <font color = "white" > CLICS </font></a>  </h1>
+<header>
+</div>
 
-		<div class="center">
-			<p style="text-align:center;">
-					<img src="capture.png">
-					</div>
-				</p>
+	<div class="center">
+		<p style="text-align:center;">
+				<img src="capture.png">
+				</div>
+			</p>
 
-	</header>
-
+</header>
 </body>
 
+<body>
+	<header class="site-header" id="header">
+		<h1 class="site-header__title" data-lead-id="site-header-title">THANK YOU!</h1>
+	</header>
 
-<div class="container">
-    <div class="row">
-        <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                    <address>
-                        <strong>
-													<p id="welcome"> </p>
-													<script>
-													    window.onload = function() {
-													        document.getElementById('welcome').innerText = sessionStorage.getItem('userclamps')
-																	+"\n" + sessionStorage.getItem('username')
-																	+ "\n  " + sessionStorage.getItem('userid') + "\n " ;
-													    };
-													</script>
-											</strong>
-                    </address>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
-                    <p>
-                        <em>
-
-													<p id="demo"></p>
-
-													<script>
-													var today = new Date();
-													var dd = today.getDate();
-
-													var mm = today.getMonth()+1;
-													var yyyy = today.getFullYear();
-													if(dd<10)
-													{
-													    dd='0'+dd;
-													}
-
-													if(mm<10)
-													{
-													    mm='0'+mm;
-													}
-													today = dd+'/'+mm+'/'+yyyy;
-													document.getElementById("demo").innerHTML = today;
-													</script>
-
-													</em>
-                    </p>
-                    <p>
-                        <em>Receipt #: 34522677W</em>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="text-center">
-                    <h1>Receipt</h1>
-                </div>
-                </span>
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Detail(s)</th>
-                            <th>#</th>
-                            <th class="text-center">Price</th>
-                            <th class="text-center">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="col-md-9"><em>Summons Amount</em></h4></td>
-                            <td class="col-md-1" style="text-align: center"> 1 </td>
-                            <td class="col-md-1 text-center">RM50</td>
-                            <td class="col-md-1 text-center">RM50</td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-9"><em>E-Service Charge</em></h4></td>
-                            <td class="col-md-1" style="text-align: center"> 1 </td>
-                            <td class="col-md-1 text-center">RM2</td>
-                            <td class="col-md-1 text-center">RM2</td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-9"><em>Goods and Services Tax @6%</em></h4></td>
-                            <td class="col-md-1" style="text-align: center"> 1 </td>
-                            <td class="col-md-1 text-center">RM0.12</td>
-                            <td class="col-md-1 text-center">RM0.12</td>
-                        </tr>
-
-                        <tr>
-                            <td>   </td>
-                            <td>   </td>
-                            <td class="text-right"><h4><strong>Total: </strong></h4></td>
-                            <td class="text-center text-danger"><h4><strong>RM52.12</strong></h4></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-								<body>
-
-									<script
-										<script src="https://www.paypal.com/sdk/js?client-id=AebDxTEC8H_Qk3zyRjcoj2qzBPmSsvqwW0Uw-NJmM3jbRclDC_UlTRaJb4JU0bQGH_w4pFq5xjL4maBm&currency=MYR"></script>
-
-									</script>
-
-									<div id="paypal-button-container"></div>
-
-									<div id="message" class="center">
-										<p style="text-align:center;">
-							<script>
-
-							 paypal.Buttons({
-								 createOrder: function(data, actions) {
-									 // This function sets up the details of the transaction, including the amount and line item details.
-									 return actions.order.create({
-										 purchase_units: [{
-											 amount: {
-												 value: '52.12'
-											 }
-										 }]
-									 });
-								 },
-								 onApprove: function(data, actions) {
-									 // This function captures the funds from the transaction.
-									 return actions.order.capture().then(function(details) {
-										 // This function shows a transaction success message to your buyer.
-										 alert('Transaction completed by ' + details.payer.name.given_name);
-										 window.location = "https://clicsutp.github.io/confirm-payment/";
-									 });
-								 }
-							 }).render('#paypal-button-container');
-							 //This function displays Smart Payment Buttons on your web page.
-							</script>
-							</p>
-							</div>
-								</body>
+	<div class="main-content">
+		<i class="fa fa-check main-content__checkmark" id="checkmark"></i>
+		<p class="main-content__body" data-lead-id="main-content-body">Thanks a bunch for filling that out. It means a lot to us, just like you do! We really appreciate you giving us a moment of your time today. Thanks for being you.</p>
+	</div>
 
 
 
-            </div>
-        </div>
-    </div>
+<footer class="site-footer" id="footer">
+		<p class="site-footer__fineprint" id="fineprint">Should you have any enquiries, please contact us through email at clics.enterprise@gmail.com</p>
+	</footer>
 
-
-
-		<div id="message" class="center">
-			<p style="text-align:center;">
-			Should you have any problem with our services,
-			<br>please call 0x-xxxxxxxx or  email xx@xx.com.my.
-		</p>
-			</div>
-
+</body>
 </html>
